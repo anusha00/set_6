@@ -8,13 +8,20 @@ class Ideone
 	{
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
-		System.out.print(n%10);
-		n=n/10;
+		int rev=0;
 		while(n!=0)
 		{
 			int rem=n%10;
-			System.out.print(" "+rem);
+			rev=(rev*10)+rem;
 			n=n/10;
+			
+		}
+		System.out.print(rev%10);
+		rev=rev/10;
+		while(rev!=0)
+		{
+			System.out.print(" "+rev%10);
+			rev=rev/10;
 		}
 	}
 }
