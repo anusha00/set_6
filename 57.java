@@ -21,6 +21,8 @@ class Ideone
 		}
 		if(cnt>0)
 		System.out.print(cnt);
+		else
+			System.out.print(cnt);
 		
 	}
 }
